@@ -1,0 +1,8 @@
+Good task: input5.txt
+Iteration =  6
+Objective function = 90
+Human <-> Object | Price
+1 <-> 1 |  2
+2 <-> 3 |  5
+3 <-> 4 |  0
+4 <-> 2 |  0
