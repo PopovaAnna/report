@@ -1,4 +1,4 @@
-Good task: input6.txt
+ood task: input6.txt
 Iteration =  11
 Objective function = 174
 Human <-> Object | Price

@@ -19,20 +19,22 @@ for i=1:n
   if (i2h(ix)==0)%предмет свободен
     s(i) = ix; %закрепляем этот предмет за i
     i2h(ix) = i; %предмет теперь занят
+    %A(:,ix) = 0;
     continue;
+  endif
+endfor
+for i=1:n
+  if (s(i)!=0)
+    A(:,s(i))=0;
   endif
 endfor
 %второй проход - среди не занятых берем максимумы
 for i=1:n
   if (s(i)==0)
-    max_vacant = 0;
-    for j=1:n
-      if ((A(i,j)>max_vacant) && (i2h(j)==0))
-        max_vacant = A(i,j);
-        i2h(j) = i;
-        s(i) = j;
-      endif
-    endfor
+    [max_el,ix] = max(A(i,:));
+    s(i) = ix; 
+    i2h(ix) = i;
+    A(:,ix) = 0;
   endif
 endfor
 %значение целевой функции

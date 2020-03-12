@@ -1,9 +1,9 @@
-Objective function = 96
+Objective function = 174
 Human <-> Object
-1 <-> 3
+1 <-> 7
 2 <-> 1
-3 <-> 7
-4 <-> 4
-5 <-> 5
-6 <-> 2
+3 <-> 4
+4 <-> 3
+5 <-> 2
+6 <-> 5
 7 <-> 6
